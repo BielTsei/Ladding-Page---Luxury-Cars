@@ -168,7 +168,7 @@ img {
 }
 
 .form {
-  height: 480px;
+  height: 580px;
   text-align: center;
 }
 
@@ -194,6 +194,10 @@ img {
   max-width: 300px;
 }
 
+#mensagem {
+  height: 100px;
+}
+
 input::placeholder {
   color: #008ea7ac;
 }
@@ -208,6 +212,7 @@ input {
 }
 
 button {
+  cursor: pointer;
   width: 120px;
   height: 36px;
   background-color: #f15213;

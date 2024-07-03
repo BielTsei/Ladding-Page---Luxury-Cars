@@ -108,27 +108,53 @@
           </div>
         </div>
       </div>
-      <div id="Fale-Conosco" class="form">
+      <form id="Fale-Conosco" class="form">
         <p>Entre em contato</p>
         <div class="form-dados">
           <p>Nome</p>
-          <input type="text" placeholder="Seu nome" name="name" id="name" />
+          <input
+            for="name"
+            type="text"
+            placeholder="Seu nome"
+            name="name"
+            id="name"
+          />
         </div>
         <div class="form-dados">
           <p>Email</p>
-          <input type="email" placeholder="Seu email" name="email" id="email" />
+          <input
+            required
+            for="email"
+            type="email"
+            placeholder="Seu email"
+            name="email"
+            id="email"
+          />
         </div>
         <div class="form-dados">
           <p>Telefone</p>
           <input
+            required
+            for="number"
             type="text"
             placeholder="Seu telefone"
             name="number"
             id="number"
           />
         </div>
-        <button>Enviar</button>
-      </div>
+        <div class="form-dados">
+          <p>Mensagem</p>
+          <input
+            required
+            for="mensagem"
+            type="text"
+            placeholder="Sua mensagem"
+            name="mensagem"
+            id="mensagem"
+          />
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
     <footer>
       <p>Desenvolvido por &copy;Gabriel Tsei</p>
