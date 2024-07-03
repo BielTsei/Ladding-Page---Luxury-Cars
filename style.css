@@ -18,10 +18,6 @@ a {
   transition: 0.3s;
 }
 
-a:hover {
-  opacity: 0.7;
-}
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -72,14 +68,14 @@ body {
 
 .title {
   color: #ffff;
-  font-size: 26px;
-  height: 100vh;
+  font-size: 1.5em;
+  height: 80vh;
+  margin: 100px 15vw 0 15vw;
 }
 
 section {
   margin: 100px 15vw 0 15vw;
 }
-
 img {
   width: 100%;
   height: auto;
@@ -101,9 +97,10 @@ img {
 }
 
 .grid-wrapper {
+  margin: 100px 15vw 0 15vw;
   display: grid;
   grid-gap: 22px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: 280px;
   grid-auto-flow: dense;
 }
@@ -121,32 +118,31 @@ img {
   grid-row: span 2;
 }
 
-/* .container-contact {
-  height: 50vh;
-  width: 100%;
-} */
-
 .container-contact {
+  margin: 100px 15vw 0 15vw;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  max-width: 480px;
+  flex-direction: column;
   margin-top: 100px;
-  height: 280px;
-  background-color: #008ea718;
+  margin-bottom: 100px;
+  height: 100%;
+  background-color: #008ea720;
   border-radius: 10px;
-  padding: 60px 15% 60px 15%;
-  backdrop-filter: blur(8px);
+  padding: 60px 6% 60px 6%;
+  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(8px);
 }
 
 #endereço {
   margin-bottom: 12px;
-  font-size: 16px;
+  font-size: 0.77em;
   color: #ffff;
-  /* text-align: center; */
 }
 .contact-dados img {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   margin-right: 7px;
 }
 
@@ -158,18 +154,72 @@ img {
 }
 
 .contact-dados p {
-  font-size: 12px;
+  font-size: 0.67em;
   color: #ffff;
+}
+
+.form {
+  margin: 100px 15vw 0 15vw;
+  height: 60vh;
+  text-align: center;
 }
 
 .form p {
+  font-size: 1.42em;
+  text-align: center;
   color: #ffff;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .form-dados p {
-  color: #ffff;
-  font-weight: 300;
+  text-align: left;
+  font-size: 1.1em;
+  color: black;
+  font-weight: 600;
+}
+
+.form-dados {
+  margin-bottom: 14px;
+}
+
+input::placeholder {
+  color: #008ea7ac;
+}
+
+input {
+  width: 100%;
+  height: 36px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding-left: 18px;
+}
+
+button {
+  width: 120px;
+  height: 36px;
+  background-color: #f15213;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+footer {
+  padding-top: 34px;
+  background-color: #008da7;
+  width: 100%;
+  height: 130px;
+  color: white;
+  text-align: center;
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+  margin-top: 25px;
 }
 
 @media (max-width: 999px) {
