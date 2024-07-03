@@ -70,7 +70,14 @@ body {
   color: #ffff;
   font-size: 1.5em;
   height: 80vh;
-  margin: 100px 15vw 0 15vw;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 7;
 }
 
 section {
@@ -97,7 +104,6 @@ img {
 }
 
 .grid-wrapper {
-  margin: 100px 15vw 0 15vw;
   display: grid;
   grid-gap: 22px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -119,7 +125,9 @@ img {
 }
 
 .container-contact {
-  margin: 100px 15vw 0 15vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,7 +167,6 @@ img {
 }
 
 .form {
-  margin: 100px 15vw 0 15vw;
   height: 60vh;
   text-align: center;
 }
@@ -180,7 +187,10 @@ img {
 }
 
 .form-dados {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 14px;
+  max-width: 300px;
 }
 
 input::placeholder {
